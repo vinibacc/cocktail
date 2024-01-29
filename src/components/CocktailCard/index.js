@@ -1,25 +1,17 @@
-import { StyleSheet, Pressable, Image, Text, TouchableOpacity } from "react-native"
+import { View, StyleSheet, Image, Text } from "react-native"
+
 export const CocktailCard = (props) => {
-    return (
-        <TouchableOpacity style={styles.card}>
-            <Image style={styles.img} source={props.imageUrl} />
-            <Text style={styles.title}>Teste</Text>
-        </TouchableOpacity>
-    )
+
+  return (
+    <View style={{ margin: 10 }}>
+      <Image source={{ uri: props.imageUrl }} style={{ width: 200, height: 200 }} />
+      <Text style={styles.title}>{props.title}</Text>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
-    card:{
-        marginLeft: 20
-    },
-    img: {
-        width: 200,
-        height: 200,
-    },
-    title: {
-        borderColor: "#000",
-        borderWidth: 1,
-        width: "100%",
-        textAlign: "center"
-    }
+  title: {
+    textAlign: "center"
+  }
 })
