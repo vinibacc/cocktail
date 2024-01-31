@@ -4,11 +4,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Home } from './src/screens/Home';
 import { Detail } from './src/screens/Detail';
 import { Favorites } from './src/screens/Favorites';
+import {useFonts, PermanentMarker_400Regular} from '@expo-google-fonts/permanent-marker';
 
 const Stack = createNativeStackNavigator()
 
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    PermanentMarker_400Regular,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <>
       <NavigationContainer>
@@ -22,6 +31,7 @@ export default function App() {
             headerTitleStyle: {
               fontWeight: 'bold',
               textAlight: 'center',
+              fontFamily: 'PermanentMarker_400Regular',
             },
           }}>
           <Stack.Screen name="Cocktails" component={Home} />

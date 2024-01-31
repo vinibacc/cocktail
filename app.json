@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#330E49"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,17 +20,23 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000"
+        "backgroundColor": "#330E49"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "Cocktail App",
+      "shortName": "Cocktail",
+      "description": "Um aplicativo para coquetéis"
     },
     "extra": {
       "eas": {
         "projectId": "b0c67ea4-4ed8-4bf3-80c4-42406403b7ab"
       }
     },
-    "owner": "vinibacc"
+    "owner": "vinibacc",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
