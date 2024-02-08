@@ -1,6 +1,7 @@
 import { StyleSheet, View, TouchableOpacity, Text, Image } from "react-native";
 import { useLayoutEffect, useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Icon from 'react-native-vector-icons/FontAwesome6'; // ou outro ícone da sua escolha
 
 export const Detail = ({ route, navigation }) => {
     const { cocktail } = route.params;
@@ -12,7 +13,11 @@ export const Detail = ({ route, navigation }) => {
             headerRight: () => (
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 15 }}>
                     <TouchableOpacity onPress={toggleFavorite}>
-                        <Text style={{ color: 'white', fontSize: 25 }}>{isFavorited ? '♥' : '♡'}</Text>
+                        {isFavorited ? ( // Usando uma expressão ternária para renderizar o ícone correto com base na condição isFavorited
+                            <Icon name="martini-glass" size={30} color="#fff" />
+                        ) : (
+                            <Icon name="martini-glass-empty" size={30} color="#fff" />
+                        )}
                     </TouchableOpacity>
                 </View>
             ),
@@ -193,7 +198,7 @@ const styles = StyleSheet.create({
         borderColor: '#330E49',
         borderWidth: 2,
         backgroundColor: '#fff',
-        
+
     },
     alcoholLabel: {
         marginLeft: 8,
