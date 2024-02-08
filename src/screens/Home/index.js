@@ -15,14 +15,15 @@ export const Home = () => {
   return (
     <View style={styles.content}>
       <FlatList
+      style={{backgroundColor: '#f5f5f5'}}
         data={COCKTAILS}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleCardPress(item)}>
-            <CocktailCard imageUrl={item.image} title={item.nome} />
+            <CocktailCard imageUrl={item.image} title={item.name} />
           </TouchableOpacity>
         )}
-        horizontal
+        numColumns={2} // Definindo duas colunas por linha
         showsHorizontalScrollIndicator={false}
       />
       <Footer onPress={() => navigation.navigate('Favorites')} />
@@ -36,5 +37,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: 'white',
+    alignItems:'center'
   },
 });

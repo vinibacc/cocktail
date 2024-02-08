@@ -52,7 +52,7 @@ export const Favorites = () => {
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleGoToDetail(item)}>
             <View style={{ marginBottom: 10, padding: 10, backgroundColor: 'lightgrey' }}>
-              <Text>{item.nome}</Text>
+              <Text>{item.name}</Text>
             </View>
           </TouchableOpacity>
         )}
