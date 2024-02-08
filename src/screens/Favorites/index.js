@@ -41,18 +41,16 @@ export const Favorites = () => {
     navigation.navigate('Detail', { cocktail });
   };
 
+  console.log(favoriteCocktails)
   return (
     <View>
-      <Text style={{ fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginVertical: 20 }}>
-        Lista de Itens Favoritados
-      </Text>
       <FlatList
         data={favoriteCocktails}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => handleGoToDetail(item)}>
-            <View style={{ marginBottom: 10, padding: 10, backgroundColor: 'lightgrey' }}>
-              <Text>{item.name}</Text>
+            <View style={{ margin: 10, padding: 10, backgroundColor: '#330E49'}}>
+              <Text style={{ fontFamily: 'PermanentMarker_400Regular',  color: 'white', textAlign:'center'}}>{item.name}</Text>
             </View>
           </TouchableOpacity>
         )}
