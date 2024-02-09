@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Home } from './src/screens/Home';
 import { Detail } from './src/screens/Detail';
 import { Favorites } from './src/screens/Favorites';
+import { Search } from './src/screens/Search';
 import {useFonts, PermanentMarker_400Regular} from '@expo-google-fonts/permanent-marker';
 
 const Stack = createNativeStackNavigator()
@@ -35,6 +36,7 @@ export default function App() {
             },
           }}>
           <Stack.Screen name="Cocktails" component={Home} />
+          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Detail" component={Detail} />
           <Stack.Screen name="Favorites" component={Favorites} />
         </Stack.Navigator>

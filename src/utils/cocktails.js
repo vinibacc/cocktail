@@ -3,10 +3,10 @@ export const COCKTAILS = [
         "id": 1,
         "name": "Caipirinha",
         "ingredientes": [
-            {"ingrediente": "Cachaça", "quantidade": "2 oz"},
-            {"ingrediente": "Limão", "quantidade": "1 unidade"},
-            {"ingrediente": "Açúcar", "quantidade": "1 colher de chá"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Cachaça", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Limão", "quantidade": "1 unidade", "tipo":"Outros"},
+            {"ingrediente": "Açúcar", "quantidade": "1 colher de chá", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Uma bebida brasileira refrescante feita com cachaça, limão e açúcar, servida com gelo.",
@@ -18,10 +18,10 @@ export const COCKTAILS = [
         "id": 2,
         "name": "Americano",
         "ingredientes": [
-            {"ingrediente": "Vermute Doce", "quantidade": "1 oz"},
-            {"ingrediente": "Campari", "quantidade": "1 oz"},
-            {"ingrediente": "Água com gás", "quantidade": "1 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Vermute Doce", "quantidade": "1 oz" ,"tipo":"Destilado"},
+            {"ingrediente": "Campari", "quantidade": "1 oz","tipo":"Bitter"},
+            {"ingrediente": "Água com gás", "quantidade": "1 oz","tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto","tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um coquetel italiano-americano leve e refrescante com vermute doce, Campari e água com gás, servido com gelo.",
@@ -33,11 +33,11 @@ export const COCKTAILS = [
         "id": 3,
         "name": "Negroni",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "1 oz"},
-            {"ingrediente": "Vermute Tinto", "quantidade": "1 oz"},
-            {"ingrediente": "Campari", "quantidade": "1 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"},
-            {"ingrediente": "Casca de laranja (para decorar)", "quantidade": "opcional"}
+            {"ingrediente": "Gin", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Vermute Doce", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Campari", "quantidade": "1 oz", "tipo":"Bitter"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto","tipo":"Outros"},
+            {"ingrediente": "Casca de laranja (para decorar)", "quantidade": "opcional","tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel clássico italiano feito com gin, vermute tinto e Campari, servido com gelo e decorado com casca de laranja.",
@@ -49,10 +49,10 @@ export const COCKTAILS = [
         "id": 4,
         "name": "Martini",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "2 oz"},
-            {"ingrediente": "Vermute Seco", "quantidade": "1/2 oz"},
-            {"ingrediente": "Azeitona (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Gin", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Vermute Seco", "quantidade": "1/2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Azeitona (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
         "descricao": "Um clássico coquetel de gin com um toque de vermute seco, geralmente servido com uma azeitona como decoração.",
@@ -64,11 +64,11 @@ export const COCKTAILS = [
         "id": 5,
         "name": "Margarita",
         "ingredientes": [
-            {"ingrediente": "Tequila", "quantidade": "1 1/2 oz"},
-            {"ingrediente": "Licor de Laranja", "quantidade": "1 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Sal (para a borda do copo)", "quantidade": "a gosto"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Tequila", "quantidade": "1 1/2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Licor de Laranja", "quantidade": "1 oz", "tipo":"Licor"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Sal (para a borda do copo)", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo de Margarita",
         "descricao": "Um coquetel mexicano feito com tequila, licor de laranja e suco de limão, geralmente servido com a borda do copo salgada.",
@@ -80,11 +80,11 @@ export const COCKTAILS = [
         "id": 6,
         "name": "Piña Colada",
         "ingredientes": [
-            {"ingrediente": "Rum", "quantidade": "2 oz"},
-            {"ingrediente": "Creme de Coco", "quantidade": "2 oz"},
-            {"ingrediente": "Suco de Abacaxi", "quantidade": "2 oz"},
-            {"ingrediente": "Abacaxi (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Rum", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Creme de Coco", "quantidade": "2 oz", "tipo":"Outros"},
+            {"ingrediente": "Suco de Abacaxi", "quantidade": "2 oz", "tipo":"Suco"},
+            {"ingrediente": "Abacaxi (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um coquetel tropical feito com rum, creme de coco e suco de abacaxi, geralmente decorado com uma fatia de abacaxi.",
@@ -96,11 +96,11 @@ export const COCKTAILS = [
         "id": 7,
         "name": "Whiskey Sour",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Clara de Ovo", "quantidade": "1 oz"},
-            {"ingrediente": "Açúcar", "quantidade": "3/4 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Clara de Ovo", "quantidade": "1 oz", "tipo":"Outros"},
+            {"ingrediente": "Açúcar", "quantidade": "3/4 oz", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel clássico à base de bourbon, suco de limão, clara de ovo e açúcar, servido com gelo.",
@@ -112,12 +112,12 @@ export const COCKTAILS = [
         "id": 8,
         "name": "Mai Tai",
         "ingredientes": [
-            {"ingrediente": "Rum Claro", "quantidade": "1 oz"},
-            {"ingrediente": "Rum Escuro", "quantidade": "1 oz"},
-            {"ingrediente": "Curaçao de Laranja", "quantidade": "1/2 oz"},
-            {"ingrediente": "Xarope de Orgeat", "quantidade": "1/2 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Rum Claro", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Rum Escuro", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Licor de Curaçao", "quantidade": "1/2 oz", "tipo":"Licor"},
+            {"ingrediente": "Xarope de Orgeat", "quantidade": "1/2 oz", "tipo":"Xarope"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel tiki clássico com rum claro, rum escuro, curaçao de laranja, xarope de orgeat e suco de limão.",
@@ -129,11 +129,11 @@ export const COCKTAILS = [
         "id": 9,
         "name": "Cosmopolitan",
         "ingredientes": [
-            {"ingrediente": "Vodka", "quantidade": "1 1/2 oz"},
-            {"ingrediente": "Licor de Laranja", "quantidade": "1 oz"},
-            {"ingrediente": "Suco de Cranberry", "quantidade": "1/2 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "1/4 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Vodka", "quantidade": "1 1/2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Licor de Laranja", "quantidade": "1 oz", "tipo":"Licor"},
+            {"ingrediente": "Suco de Cranberry", "quantidade": "1/2 oz", "tipo":"Suco"},
+            {"ingrediente": "Suco de Limão", "quantidade": "1/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
         "descricao": "Um coquetel sofisticado com vodka, licor de laranja, suco de cranberry e suco de limão.",
@@ -145,12 +145,12 @@ export const COCKTAILS = [
         "id": 10,
         "name": "Mojito",
         "ingredientes": [
-            {"ingrediente": "Rum Branco", "quantidade": "2 oz"},
-            {"ingrediente": "Hortelã", "quantidade": "8 folhas"},
-            {"ingrediente": "Açúcar", "quantidade": "2 colheres de chá"},
-            {"ingrediente": "Suco de Limão", "quantidade": "1 oz"},
-            {"ingrediente": "Água com gás", "quantidade": "a gosto"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Rum Branco", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Hortelã", "quantidade": "8 folhas", "tipo":"Outros"},
+            {"ingrediente": "Açúcar", "quantidade": "2 colheres de chá", "tipo":"Outros"},
+            {"ingrediente": "Suco de Limão", "quantidade": "1 oz", "tipo":"Suco"},
+            {"ingrediente": "Água com gás", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um refrescante coquetel cubano com rum branco, hortelã, açúcar, suco de limão e água com gás.",
@@ -162,12 +162,12 @@ export const COCKTAILS = [
         "id": 11,
         "name": "Old Fashioned",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz"},
-            {"ingrediente": "Açúcar", "quantidade": "1 colher de chá"},
-            {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes"},
-            {"ingrediente": "Laranja (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Açúcar", "quantidade": "1 colher de chá", "tipo":"Outros"},
+            {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes", "tipo":"Bitter"},
+            {"ingrediente": "Laranja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel clássico com bourbon, açúcar, angostura bitters e decoração de laranja e cereja.",
@@ -179,10 +179,10 @@ export const COCKTAILS = [
         "id": 12,
         "name": "Gin Tônica",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "2 oz"},
-            {"ingrediente": "Água Tônica", "quantidade": "a gosto"},
-            {"ingrediente": "Limão (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Gin", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Água Tônica", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Limão (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um coquetel simples e clássico com gin, água tônica e decoração de limão, servido com gelo.",
@@ -194,10 +194,10 @@ export const COCKTAILS = [
         "id": 13,
         "name": "Daiquiri",
         "ingredientes": [
-            {"ingrediente": "Rum Branco", "quantidade": "2 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Xarope de Açúcar", "quantidade": "1/2 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Rum Branco", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Xarope de Açúcar", "quantidade": "1/2 oz", "tipo":"Xarope"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
         "descricao": "Um coquetel clássico cubano com rum branco, suco de limão e xarope de açúcar, servido com gelo.",
@@ -209,11 +209,11 @@ export const COCKTAILS = [
         "id": 14,
         "name": "Manhattan",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz"},
-            {"ingrediente": "Vermute Doce", "quantidade": "1 oz"},
-            {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes"},
-            {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Vermute Doce", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes", "tipo":"Bitter"},
+            {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
         "descricao": "Um coquetel elegante com bourbon, vermute doce, angostura bitters e decoração de cereja, servido com gelo.",
@@ -225,11 +225,11 @@ export const COCKTAILS = [
         "id": 15,
         "name": "Tom Collins",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "2 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Xarope de Açúcar", "quantidade": "1/2 oz"},
-            {"ingrediente": "Água com gás", "quantidade": "a gosto"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Gin", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Xarope de Açúcar", "quantidade": "1/2 oz", "tipo":"Xarope"},
+            {"ingrediente": "Água com gás", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um coquetel refrescante com gin, suco de limão, xarope de açúcar e água com gás, servido com gelo.",
@@ -241,14 +241,14 @@ export const COCKTAILS = [
         "id": 16,
         "name": "Singapore Sling",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "1 1/2 oz"},
-            {"ingrediente": "Licor de Cereja", "quantidade": "1/2 oz"},
-            {"ingrediente": "Licor de Grand Marnier", "quantidade": "1/4 oz"},
-            {"ingrediente": "Suco de Abacaxi", "quantidade": "1 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "1/2 oz"},
-            {"ingrediente": "Xarope de Grenadine", "quantidade": "1/4 oz"},
-            {"ingrediente": "Água com gás", "quantidade": "a gosto"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Gin", "quantidade": "1 1/2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Licor de Cereja", "quantidade": "1/2 oz", "tipo":"Licor"},
+            {"ingrediente": "Licor de Grand Marnier", "quantidade": "1/4 oz", "tipo":"Licor"},
+            {"ingrediente": "Suco de Abacaxi", "quantidade": "1 oz", "tipo":"Suco"},
+            {"ingrediente": "Suco de Limão", "quantidade": "1/2 oz", "tipo":"Suco"},
+            {"ingrediente": "Xarope de Grenadine", "quantidade": "1/4 oz", "tipo":"Xarope"},
+            {"ingrediente": "Água com gás", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo alto",
         "descricao": "Um coquetel tropical complexo com gin, licores, sucos e água com gás, servido com gelo.",
@@ -260,11 +260,11 @@ export const COCKTAILS = [
         "id": 17,
         "name": "Aperol Spritz",
         "ingredientes": [
-            {"ingrediente": "Aperol", "quantidade": "2 oz"},
-            {"ingrediente": "Prosecco", "quantidade": "3 oz"},
-            {"ingrediente": "Água com gás", "quantidade": "1 oz"},
-            {"ingrediente": "Laranja (para decorar)", "quantidade": "opcional"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Aperol", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Prosecco", "quantidade": "3 oz", "tipo":"Outros"},
+            {"ingrediente": "Água com gás", "quantidade": "1 oz", "tipo":"Outros"},
+            {"ingrediente": "Laranja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Vinho",
         "descricao": "Um coquetel italiano refrescante com Aperol, Prosecco e água com gás, geralmente decorado com uma fatia de laranja.",
@@ -276,10 +276,10 @@ export const COCKTAILS = [
         "id": 18,
         "name": "White Russian",
         "ingredientes": [
-            {"ingrediente": "Vodka", "quantidade": "2 oz"},
-            {"ingrediente": "Licor de Café", "quantidade": "1 oz"},
-            {"ingrediente": "Creme de Leite", "quantidade": "1 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Vodka", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Licor de Café", "quantidade": "1 oz", "tipo":"Licor"},
+            {"ingrediente": "Creme de Leite", "quantidade": "1 oz", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel cremoso com vodka, licor de café e creme de leite, servido com gelo.",
@@ -291,11 +291,11 @@ export const COCKTAILS = [
         "id": 19,
         "name": "Whiskey Smash",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz"},
-            {"ingrediente": "Hortelã", "quantidade": "8 folhas"},
-            {"ingrediente": "Xarope de Açúcar", "quantidade": "3/4 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "1/2 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Xarope de Açúcar", "quantidade": "3/4 oz", "tipo":"Xarope"},
+            {"ingrediente": "Suco de Limão", "quantidade": "1/2 oz", "tipo":"Suco"},
+            {"ingrediente": "Hortelã", "quantidade": "8 folhas", "tipo":"Outros"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
         "descricao": "Um coquetel refrescante com bourbon, hortelã, xarope de açúcar e suco de limão, servido com gelo.",
@@ -307,10 +307,10 @@ export const COCKTAILS = [
         "id": 20,
         "name": "Gimlet",
         "ingredientes": [
-            {"ingrediente": "Gin", "quantidade": "2 oz"},
-            {"ingrediente": "Xarope de Açúcar", "quantidade": "3/4 oz"},
-            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz"},
-            {"ingrediente": "Gelo", "quantidade": "a gosto"}
+            {"ingrediente": "Gin", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Xarope de Açúcar", "quantidade": "3/4 oz", "tipo":"Xarope"},
+            {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
         "descricao": "Um coquetel clássico com gin, xarope de açúcar e suco de limão, geralmente servido em uma taça de martini.",

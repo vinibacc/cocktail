@@ -34,7 +34,7 @@ export const Home = () => {
   return (
     <View style={styles.content}>
       <FlatList
-      style={{backgroundColor: '#f5f5f5'}}
+        style={{ backgroundColor: '#f5f5f5' }}
         data={COCKTAILS}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
@@ -45,7 +45,10 @@ export const Home = () => {
         numColumns={numColumns} // Definindo duas colunas por linha
         showsHorizontalScrollIndicator={false}
       />
-      <Footer onPress={() => navigation.navigate('Favorites')} />
+      <Footer
+        onPressFavorites={() => navigation.navigate('Favorites')}
+        onPressSearch={() => navigation.navigate('Search')}
+      />
     </View>
   );
 };
@@ -56,6 +59,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: 'white',
-    alignItems:'center'
+    alignItems: 'center'
   },
 });
