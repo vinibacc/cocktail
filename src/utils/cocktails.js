@@ -317,5 +317,21 @@ export const COCKTAILS = [
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Cítrico", "Elegante"],
         "image": "https://www.liquor.com/thmb/_H72TXt_gqo3rqnlqZWmmokDgQo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cucumber-gimlet-720x720-primary-e71711784f934d2f8784752599ba2e60.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Boulevardier",
+        "ingredientes": [
+            {"ingrediente": "Bourbon Whisky", "quantidade": "30 ml", "tipo":"Destilado"},
+            {"ingrediente": "Vermute Doce", "quantidade": "30 ml", "tipo":"Destilado"},
+            {"ingrediente": "Campari", "quantidade": "30 ml", "tipo":"Bitter"},
+            {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"},
+            {"ingrediente": "Casca de laranja (para decorar)", "quantidade": "opcional","tipo":"Outros"}
+        ],
+        "tipo_copo": "Copo baixo",
+        "descricao": "O Boulevardier é um coquetel clássico à base de bourbon, vermute e Campari. Geralmente é servido em um copo baixo.",
+        "teor_alcoolico": "Alto",
+        "caracteristicas": ["Amargo", "Forte"],
+        "image": "https://www.liquor.com/thmb/LV0L3CF51hFJoSN-QdLe6ijXsFQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__09__12094720__Boulevardier-720x720-recipe-53da547e8cfc4bd79a393ac99891f5ba.jpg"
     }
 ];
