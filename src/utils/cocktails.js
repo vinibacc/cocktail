@@ -96,14 +96,14 @@ export const COCKTAILS = [
         "id": 7,
         "name": "Whiskey Sour",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Bourbon Whisky", "quantidade": "2 oz", "tipo":"Destilado"},
             {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
             {"ingrediente": "Clara de Ovo", "quantidade": "1 oz", "tipo":"Outros"},
             {"ingrediente": "Açúcar", "quantidade": "3/4 oz", "tipo":"Outros"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
-        "descricao": "Um coquetel clássico à base de bourbon, suco de limão, clara de ovo e açúcar, servido com gelo.",
+        "descricao": "Um coquetel clássico à base de Bourbon Whisky, suco de limão, clara de ovo e açúcar, servido com gelo.",
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Ácido", "Agridoce"],
         "image": "https://cdn.diffords.com/contrib/stock-images/2023/08/64ddebc768b4d.jpg"
@@ -162,7 +162,7 @@ export const COCKTAILS = [
         "id": 11,
         "name": "Old Fashioned",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Bourbon Whisky", "quantidade": "2 oz", "tipo":"Destilado"},
             {"ingrediente": "Açúcar", "quantidade": "1 colher de chá", "tipo":"Outros"},
             {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes", "tipo":"Bitter"},
             {"ingrediente": "Laranja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
@@ -170,7 +170,7 @@ export const COCKTAILS = [
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
-        "descricao": "Um coquetel clássico com bourbon, açúcar, angostura bitters e decoração de laranja e cereja.",
+        "descricao": "Um coquetel clássico com Bourbon Whisky, açúcar, angostura bitters e decoração de laranja e cereja.",
         "teor_alcoolico": "Alto",
         "caracteristicas": ["Robusto", "Aromático"],
         "image": "https://www.allrecipes.com/thmb/DQIEfVzC7KndUnnHJbmB44a0u3Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/221320-old-fashioned-cocktail-ddmfs-3X4-13181414-bf1365252476463b9650096c28b5acfd.jpg"
@@ -209,14 +209,14 @@ export const COCKTAILS = [
         "id": 14,
         "name": "Manhattan",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Bourbon Whisky", "quantidade": "2 oz", "tipo":"Destilado"},
             {"ingrediente": "Vermute Doce", "quantidade": "1 oz", "tipo":"Destilado"},
             {"ingrediente": "Angostura Bitters", "quantidade": "2-3 dashes", "tipo":"Bitter"},
             {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Taça de Martini",
-        "descricao": "Um coquetel elegante com bourbon, vermute doce, angostura bitters e decoração de cereja, servido com gelo.",
+        "descricao": "Um coquetel elegante com Bourbon Whisky, vermute doce, angostura bitters e decoração de cereja, servido com gelo.",
         "teor_alcoolico": "Alto",
         "caracteristicas": ["Elegante", "Aromático"],
         "image": "https://images.cocktailwave.com/tr:h-1200,w-1200/manhattan.png"
@@ -291,14 +291,14 @@ export const COCKTAILS = [
         "id": 19,
         "name": "Whiskey Smash",
         "ingredientes": [
-            {"ingrediente": "Bourbon", "quantidade": "2 oz", "tipo":"Destilado"},
+            {"ingrediente": "Bourbon Whisky", "quantidade": "2 oz", "tipo":"Destilado"},
             {"ingrediente": "Xarope de Açúcar", "quantidade": "3/4 oz", "tipo":"Xarope"},
             {"ingrediente": "Suco de Limão", "quantidade": "1/2 oz", "tipo":"Suco"},
             {"ingrediente": "Hortelã", "quantidade": "8 folhas", "tipo":"Outros"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
         "tipo_copo": "Copo baixo",
-        "descricao": "Um coquetel refrescante com bourbon, hortelã, xarope de açúcar e suco de limão, servido com gelo.",
+        "descricao": "Um coquetel refrescante com Bourbon Whisky, hortelã, xarope de açúcar e suco de limão, servido com gelo.",
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Refrescante", "Agridoce"],
         "image": "https://www.liquor.com/thmb/IjKQql6LcjTyCWuqbi_aMicEL6c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/whiskey-smash-720x720-recipe-c696cdf017494dbd981e51dca3f4402e.jpg"

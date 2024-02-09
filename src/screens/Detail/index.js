@@ -2,6 +2,7 @@ import { StyleSheet, View, TouchableOpacity, Text, Image } from "react-native";
 import { useLayoutEffect, useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/FontAwesome6'; // ou outro ícone da sua escolha
+import Toast from "react-native-toast-message";
 
 export const Detail = ({ route, navigation }) => {
     const { cocktail } = route.params;
@@ -28,6 +29,18 @@ export const Detail = ({ route, navigation }) => {
         // Carregue o estado de favorito ao iniciar a tela
         loadFavoriteStatus();
     }, []);
+
+    const handleQuantityPress = () => {
+        Toast.show({
+            type: 'info',
+            position: 'bottom',
+            text1: '1 oz equivale a 30 ml',
+            visibilityTime: 4000,
+            autoHide: true,
+            topOffset: 30,
+            bottomOffset: 40,
+        });
+    };
 
     // Função para alternar o estado de favorito
     const toggleFavorite = async () => {
@@ -108,7 +121,9 @@ export const Detail = ({ route, navigation }) => {
                     {cocktail.ingredientes.map((ingrediente, index) => (
                         <View style={styles.ingredientRow} key={index}>
                             <Text style={styles.ingredient}>{ingrediente.ingrediente}</Text>
-                            <Text style={styles.quantity}>{ingrediente.quantidade}</Text>
+                            <TouchableOpacity onPress={handleQuantityPress}>
+                                <Text style={styles.quantity}>{ingrediente.quantidade}</Text>
+                            </TouchableOpacity>
                         </View>
                     ))}
                 </View>
@@ -121,6 +136,10 @@ export const Detail = ({ route, navigation }) => {
                 <View style={styles.alcoholContainer}>
                     <Text style={styles.alcoholLabel}>Teor alcoólico</Text>
                     <Text style={[styles.alcoholLevel, { backgroundColor: getAlcoholColor() }]}>{cocktail.teor_alcoolico}</Text>
+                </View>
+                <View style={styles.alcoholContainer}>
+                    <Text style={styles.alcoholLabel}>Tipo de Copo</Text>
+                    <Text style={styles.alcoholLevel}>{cocktail.tipo_copo}</Text>
                 </View>
             </View>
         </View>
