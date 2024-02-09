@@ -2,7 +2,6 @@ import { StyleSheet, View, TouchableOpacity, Text, Image } from "react-native";
 import { useLayoutEffect, useState, useEffect } from "react";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/FontAwesome6'; // ou outro ícone da sua escolha
-import Toast from "react-native-toast-message";
 
 export const Detail = ({ route, navigation }) => {
     const { cocktail } = route.params;
@@ -29,18 +28,6 @@ export const Detail = ({ route, navigation }) => {
         // Carregue o estado de favorito ao iniciar a tela
         loadFavoriteStatus();
     }, []);
-
-    const handleQuantityPress = () => {
-        Toast.show({
-            type: 'info',
-            position: 'bottom',
-            text1: '1 oz equivale a 30 ml',
-            visibilityTime: 4000,
-            autoHide: true,
-            topOffset: 30,
-            bottomOffset: 40,
-        });
-    };
 
     // Função para alternar o estado de favorito
     const toggleFavorite = async () => {
@@ -121,9 +108,7 @@ export const Detail = ({ route, navigation }) => {
                     {cocktail.ingredientes.map((ingrediente, index) => (
                         <View style={styles.ingredientRow} key={index}>
                             <Text style={styles.ingredient}>{ingrediente.ingrediente}</Text>
-                            <TouchableOpacity onPress={handleQuantityPress}>
-                                <Text style={styles.quantity}>{ingrediente.quantidade}</Text>
-                            </TouchableOpacity>
+                            <Text style={styles.quantity}>{ingrediente.quantidade}</Text>
                         </View>
                     ))}
                 </View>

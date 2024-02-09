@@ -54,7 +54,7 @@ export const COCKTAILS = [
             {"ingrediente": "Azeitona (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
-        "tipo_copo": "Taça de Martini",
+        "tipo_copo": "Taça Martini",
         "descricao": "Um clássico coquetel de gin com um toque de vermute seco, geralmente servido com uma azeitona como decoração.",
         "teor_alcoolico": "Alto",
         "caracteristicas": ["Elegante", "Seco"],
@@ -135,7 +135,7 @@ export const COCKTAILS = [
             {"ingrediente": "Suco de Limão", "quantidade": "1/4 oz", "tipo":"Suco"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
-        "tipo_copo": "Taça de Martini",
+        "tipo_copo": "Taça Martini",
         "descricao": "Um coquetel sofisticado com vodka, licor de laranja, suco de cranberry e suco de limão.",
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Cítrico", "Elegante"],
@@ -199,7 +199,7 @@ export const COCKTAILS = [
             {"ingrediente": "Xarope de Açúcar", "quantidade": "1/2 oz", "tipo":"Xarope"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
-        "tipo_copo": "Taça de Martini",
+        "tipo_copo": "Taça Martini",
         "descricao": "Um coquetel clássico cubano com rum branco, suco de limão e xarope de açúcar, servido com gelo.",
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Cítrico", "Doce"],
@@ -215,7 +215,7 @@ export const COCKTAILS = [
             {"ingrediente": "Cereja (para decorar)", "quantidade": "opcional", "tipo":"Outros"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
-        "tipo_copo": "Taça de Martini",
+        "tipo_copo": "Taça Martini",
         "descricao": "Um coquetel elegante com Bourbon Whisky, vermute doce, angostura bitters e decoração de cereja, servido com gelo.",
         "teor_alcoolico": "Alto",
         "caracteristicas": ["Elegante", "Aromático"],
@@ -312,8 +312,8 @@ export const COCKTAILS = [
             {"ingrediente": "Suco de Limão", "quantidade": "3/4 oz", "tipo":"Suco"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"}
         ],
-        "tipo_copo": "Taça de Martini",
-        "descricao": "Um coquetel clássico com gin, xarope de açúcar e suco de limão, geralmente servido em uma taça de martini.",
+        "tipo_copo": "Taça Martini",
+        "descricao": "Um coquetel clássico com gin, xarope de açúcar e suco de limão, geralmente servido em uma Taça Martini.",
         "teor_alcoolico": "Médio",
         "caracteristicas": ["Cítrico", "Elegante"],
         "image": "https://www.liquor.com/thmb/_H72TXt_gqo3rqnlqZWmmokDgQo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cucumber-gimlet-720x720-primary-e71711784f934d2f8784752599ba2e60.jpg"
