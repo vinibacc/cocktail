@@ -322,9 +322,9 @@ export const COCKTAILS = [
         "id": 21,
         "name": "Boulevardier",
         "ingredientes": [
-            {"ingrediente": "Bourbon Whisky", "quantidade": "30 ml", "tipo":"Destilado"},
-            {"ingrediente": "Vermute Doce", "quantidade": "30 ml", "tipo":"Destilado"},
-            {"ingrediente": "Campari", "quantidade": "30 ml", "tipo":"Bitter"},
+            {"ingrediente": "Bourbon Whisky", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Vermute Doce", "quantidade": "1 oz", "tipo":"Destilado"},
+            {"ingrediente": "Campari", "quantidade": "1 oz", "tipo":"Bitter"},
             {"ingrediente": "Gelo", "quantidade": "a gosto", "tipo":"Outros"},
             {"ingrediente": "Casca de laranja (para decorar)", "quantidade": "opcional","tipo":"Outros"}
         ],
