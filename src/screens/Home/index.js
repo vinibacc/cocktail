@@ -1,4 +1,5 @@
-import { View, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, TouchableOpacity, StyleSheet, FlatList, Dimensions } from 'react-native';
 import { COCKTAILS } from '../../utils/cocktails';
 import { CocktailCard } from '../../components/CocktailCard';
 import { useNavigation } from '@react-navigation/native';
@@ -6,6 +7,24 @@ import { Footer } from '../../components/Footer';
 
 export const Home = () => {
   const navigation = useNavigation();
+
+  const [numColumns, setNumColumns] = useState(getOrientation());
+
+  useEffect(() => {
+    Dimensions.addEventListener('change', handleChange);
+    return () => {
+      Dimensions.removeEventListener('change', handleChange);
+    };
+  }, []);
+
+  function handleChange() {
+    setNumColumns(getOrientation());
+  }
+
+  function getOrientation() {
+    const dim = Dimensions.get('screen');
+    return dim.width >= dim.height ? 3 : 2; // 4 colunas para landscape, 2 para portrait
+  }
 
   const handleCardPress = (cocktail) => {
     // Navegar para a tela de detalhes passando o objeto de coquetel completo
@@ -23,7 +42,7 @@ export const Home = () => {
             <CocktailCard imageUrl={item.image} title={item.name} />
           </TouchableOpacity>
         )}
-        numColumns={2} // Definindo duas colunas por linha
+        numColumns={numColumns} // Definindo duas colunas por linha
         showsHorizontalScrollIndicator={false}
       />
       <Footer onPress={() => navigation.navigate('Favorites')} />
